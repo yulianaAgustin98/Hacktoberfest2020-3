@@ -40,6 +40,7 @@ namespace Inheritance
             public void Learn()
             {
                 Console.WriteLine("Learn");
+                Console.ReadLine();
             }
         }
     }
