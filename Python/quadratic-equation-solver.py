@@ -1,3 +1,6 @@
+# This python code can be used to solve the quadratic equations, when the values of a, b, c are given as inputs. 
+
+
 import cmath;
 
 print("Enter 'x' for exit.");
