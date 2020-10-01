@@ -46,14 +46,14 @@ class Array_Rotation
     { 
         // Sample input
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of elements in array");
+        System.out.println("Enter number of elements in array -");
         int n=sc.nextInt();
         System.out.println("Enter "+ n +" elements");
         //declare an array that has n elements in it
         int a[] = new int[n];
         for(int i = 0; i < n; i++)
             a[i] = sc.nextInt();
-        System.out.println("Enter number of rotations");
+        System.out.println("Enter number of rotations -");
         int d = sc.nextInt();
         System.out.println("To rotate left press 1,\nTo rotate right press 2");
         int choice = sc.nextInt();
@@ -72,7 +72,7 @@ class Array_Rotation
                 }
             default:
                 {
-                    System.out.println("Enter correct choice(1 / 2");
+                    System.out.println("Enter correct choice(1 / 2)";
                     break;
                 }
         }
