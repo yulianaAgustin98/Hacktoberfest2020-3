@@ -26,8 +26,7 @@ import numpy as np
 
 dateparse = lambda dates: pd.datetime.strptime(dates, '%Y-%m-%d')
 data = pd.read_csv('/Users/andre/Documents/Trading/Projects/stock market forecasting/INO.csv',sep=',', index_col='Date', parse_dates=['Date'], date_parser=dateparse).fillna(0)
-#/Users/nageshsinghchauhan/Downloads/ML/time_series/stock-market/
-#C:\Users\andre\Documents\Trading\Projects\stock market forecasting
+
 #plot close price
 plt.figure(figsize=(10,6))
 plt.grid(True)
