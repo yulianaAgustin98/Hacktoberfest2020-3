@@ -10,7 +10,7 @@ public class SortUsingArraysSort {
   
         Arrays.sort(arr); 
   
-        System.out.printf("Modified arr[] : %s", 
+        System.out.println("Modified arr[] : %s", 
                           Arrays.toString(arr)); 
     } 
 } 
