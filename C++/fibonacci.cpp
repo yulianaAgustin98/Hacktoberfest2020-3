@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
     int n;
-    cout << "Enter the number of terms to print: ";
+    cout << "Enter the number of digits to print: ";
     cin >> n;
     long long a, b, c;
     a = 0;
