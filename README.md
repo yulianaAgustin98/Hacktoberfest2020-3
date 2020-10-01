@@ -12,6 +12,7 @@
   1. Sign up or sign in to your <a href="https://github.com/"> Github </a> account.
   2. Register yourself at <a href="https://hacktoberfest.digitalocean.com/"> Hactoberfest 2020 </a> using your Github account.
   3. Come back to this <a href="https://github.com/Cullyege/Hacktoberfest2020"> Hacktoberfest repo</a>.
+  4. Click on Fork.
   4. Open folder of your choice. (If it is not listed, feel free to add one, or simply go to others).
   5. Add your algorithm/code or simply follow the steps mentioned there.
   
