@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - morse",
+            "request": "launch",
+            "mainClass": "morse",
+            "projectName": "Hacktoberfest2020-1_7b33ed77"
+        }
+    ]
+}
