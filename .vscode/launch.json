@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort",
+            "projectName": "Hacktoberfest2020_ce21818f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - morse",
             "request": "launch",
             "mainClass": "morse",
