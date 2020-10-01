@@ -8,16 +8,16 @@ public class SelectionSortExample2
        int arr[] = new int[50];  
        Scanner scan = new Scanner(System.in);  
          
-       System.out.print("Enter Array Size : ");  
+       System.out.println("Enter Array Size : ");  
        size = scan.nextInt();  
          
-       System.out.print("Enter Array Elements : ");  
+       System.out.println("Enter Array Elements : ");  
        for(i=0; i<size; i++)  
        {  
            arr[i] = scan.nextInt();  
        }  
          
-       System.out.print("Sorting Array using Selection Sort Technique..\n");  
+       System.out.println("Sorting Array using Selection Sort Technique..\n");  
        for(i=0; i<size; i++)  
        {  
            for(j=i+1; j<size; j++)  
@@ -31,10 +31,10 @@ public class SelectionSortExample2
            }  
        }  
          
-       System.out.print("Now the Array after Sorting is :\n");  
+       System.out.println("Now the Array after Sorting is :\n");  
        for(i=0; i<size; i++)  
        {  
-           System.out.print(arr[i]+ "  ");  
+           System.out.println(arr[i]+ "  ");  
        }  
    }  
 }  
