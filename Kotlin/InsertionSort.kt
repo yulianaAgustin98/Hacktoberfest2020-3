@@ -2,7 +2,7 @@
  * Perform insertion sort using kotlin
  */
 
-fun insertionSort2(arr: Array<Int>): Array<Int> {
+fun insertionSort(arr: IntArray): IntArray {
     for(i in arr.indices){
         val key = arr[i]
         var j = i - 1
@@ -15,4 +15,12 @@ fun insertionSort2(arr: Array<Int>): Array<Int> {
         arr[j + 1] = key
     }
     return arr
+}
+
+fun main() {
+    val arr = IntArray(20)
+    for (i in arr.indices) {
+        arr[i] = (Math.random() * 999 + 1).toInt()
+    }
+    print(insertionSort(arr).joinToString())
 }
