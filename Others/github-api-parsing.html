@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Json</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  </head>
+
+  <body>
+    <input type="text" placeholder="Type Uname" id="myInput" />
+
+    <button type="button" onclick="getInputValue();">
+     Search User
+    </button>
+
+    <div class="mypanel"></div>
+    <img id="urlimg" width="150" />
+
+    
+    <script>
+      function getInputValue() {
+        var inputVal = document.getElementById("myInput").value;
+        $.getJSON("https://api.github.com/users/" + inputVal, function (data) {
+          var text = `
+        Name: ${data.name}<br>
+        UserName: ${data.login}<br>
+        Followers: ${data.followers}<br>
+        Following: ${data.following}<br>
+        Bio: ${data.bio}<br>
+        Public Repo: ${data.public_repos}<br>
+        Location: ${data.location}<br>
+        Joined On: ${data.created_at};
+        `;
+         
+
+          console.log(data);
+
+          var delayInMilliseconds = 60000; //1 second
+
+          setTimeout(function () {
+            console.clear();
+            console.info("Console Data Cleared Successfully");
+          }, delayInMilliseconds);
+          document.getElementById("urlimg").src = `${data.avatar_url}`;
+          $(".mypanel").html(text);
+        });
+      }
+      
+    </script>
+  </body>
+</html>
