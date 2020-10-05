@@ -1,12 +1,19 @@
-public class ReverseDigit {
-    public static void main(String[] args) {
-        int no = 5432;
-        int reverse = 0;
-        while(no != 0) {
-            int digit = no % 10;
-            reverse = reverse * 10 + digit;
-            no = no / 10;
-        }
-        System.out.println("Reversed Number: " + reverse);
-    }
+class ReverseNumberWhile
+{
+   public static void main(String args[])
+   {
+      int num=0;
+      int reverse =0;
+      System.out.println("Input number to be reveresed: ");
+      Scanner in = new Scanner(System.in);
+      num = in.nextInt();
+      while( num != 0 )
+      {
+          reverse = reverse * 10;
+          reverse = reverse + num%10;
+          num = num/10;
+      }
+
+      System.out.println("Reverse of input number is: "+reverse);
+   }
 }
