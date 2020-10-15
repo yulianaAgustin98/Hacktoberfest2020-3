@@ -5,7 +5,7 @@ public class QuickSort
 {
     public static void main(String[] args)
     {Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the size of your array:");
+        System.out.println("Enter the size of your array:");
         int n = sc.nextInt(); 
 
         int array[] = new int [n];
